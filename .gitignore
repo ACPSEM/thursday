@@ -5,6 +5,8 @@
 
 !*.md
 !*.json
+!*.toml
+!*.lock
 
 !minutes/
 !.vscode/
