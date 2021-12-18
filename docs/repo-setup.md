@@ -3,7 +3,7 @@
 This repo uses the following generic tools (non-specific ):
 
 - [Poetry](https://python-poetry.org/)
-  - gracefully managemes Python virtual environments and dependencies;
+  - gracefully manages Python virtual environments and dependencies;
   - conveniently enables a project to set fixed dependencies with specific package versions, so that the project builds consistently; and
   - is handily integrated with PyPi for easier publishing of releases.
 
