@@ -3,10 +3,11 @@
 !.gitignore
 !LICENSE
 
-!*.md
 !*.json
-!*.toml
 !*.lock
+!*.md
+!*.toml
 
-!minutes/
 !.vscode/
+!docs/
+!minutes/
