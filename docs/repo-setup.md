@@ -1,5 +1,9 @@
 # How this repository is set up
 
+  - [Tools used](#tools-used)  
+  - [Record of repository setup tasks](#record-of-repository-setup-tasks)
+
+
 ### Tools used
 
 This repo uses the following generic tools:
