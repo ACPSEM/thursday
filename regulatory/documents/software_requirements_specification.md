@@ -34,74 +34,39 @@ A **User** is a person who interacts with (i.e., operates or handles) the device
 
 # Users
 
-TODO: Device Users are anyone who interacts with (i.e., operates or handles) the device.  Different users will have different requirements, so it is useful to enumerate all of them so that no important requirements are missed.  A few common stakeholders are listed below for convenience.
-
-There may be several different types of users, in which case it is worth adding more sections for each type.
-
-- Physical size, strength, and stamina,
-- Physical dexterity, flexibility, and coordination,
-- Sensory abilities (i.e., vision, hearing, tactile sensitivity),
-- Cognitive abilities, including memory,
-- Medical condition for which the device is being used,
-- Comorbidities (i.e., multiple conditions or diseases),
-- Literacy and language skills,
-- General health status,
-- Mental and emotional state,
-- Level of education and health literacy relative to the medical condition involved,
-- General knowledge of similar types of devices,
-- Knowledge of and experience with the particular device,
-- Ability to learn and adapt to a new device, and
-- Willingness and motivation to learn to use a new device.
-
-ENDTODO
+Users of this device will be the various operators of a departments Treatment Planning System (TPS) in which they will execute the scripts via the built-in scripting/extension environment. These users will have received training for operating the TPS software including the execution of these scripts.
 
 This section enumerates the types of device users, describe their characteristics, and why they are interested in the device [[FDA-HFE:5.1]].
 
-## Patient
+## Medical Physics Specialist (MP)
 
-TODO: write in details, or remove this section
+The Medical Physics Specialist will typically be responsible for performing Quality Assurance (QA) of a patient's radiotherapy treatment plan. Scripts provided will help them automate many of these checks. In addition, they are also responsible for the installation of these scripts and must ensure they are operating properly.
 
-## Physician
+## Radiation Therapist (RT)
 
-TODO: write in details, or remove this section
+A Radiation Therapist's responsibilities include contouring of structures defining patient anatomy using the TPS as well as generating the treatment plan. Scripts can automate parts of this workflow and can also be used for automated checks before being passed on to the MP for QA.
 
-## Hospital IT Personnel
+## Radiation Oncologist (RO)
 
-TODO: write in details, or remove this section
+ROs will often contour specific structures, usually defining the target volume to receive the radiation dose which they prescribed. They must also check the treatment plan to ensure the treatment delivers their prescribed dose and is safe for the patient. Scripts can automate parts of this workflow.
 
 # Use Environments
 
-TODO:
-
-You should evaluate and understand relevant characteristics of all intended use environments and describe them for the purpose of HFE/UE evaluation and design. These characteristics should be taken into account during the medical device development process, so that devices might be more accommodating of the conditions of use that could affect their use safety and effectiveness.
-
-The environments in which medical devices are used might include a variety of conditions that could determine optimal user interface design. Medical devices might be used in clinical environments or non-clinical environments, community settings or moving vehicles. Examples of environmental use conditions include the following:
-
-- The lighting level might be low or high, making it hard to see device displays or controls.
-- The noise level might be high, making it hard to hear device operation feedback or audible alerts and alarms or to distinguish one alarm from another.
-- The room could contain multiple models of the same device, component or accessory, making it difficult to identify and select the correct one.
-- The room might be full of equipment or clutter or busy with other people and activities, making it difficult for people to maneuver in the space and providing distractions that could confuse or overwhelm the device user.
-- The device might be used in a moving vehicle, subjecting the device and the user to jostling and vibration that could make it difficult for the user to read a display or perform fine motor movements.
-
-You should evaluate and understand relevant characteristics of all intended use environments and describe them for the purpose of HFE/UE evaluation and design. These characteristics should be taken into account during the medical device development process, so that devices might be more accommodating of the conditions of use that could affect their use safety and effectiveness.
-
-ENDTODO
-
 This section enumerates the environments in which the {{ device.name }} will be used [[FDA-HFE:5.2]].
 
-## Radiology Reading Room
+## Users Office in Clinic
 
-TODO: write in details, or remove this section
+All users (MP, RT, RO) will most commonly use the TPS from their designated office at the clinic. In certain scenarios offices are shared so some background noise from other conversations in the office may occur. They will operate the TPS on a designated computer which has been assigned to them.
 
-## Radiologist's Home
+## Users Home
 
-TODO: write in details, or remove this section
+At times these users may work from home and operate the TPS via a Virtual Private Network (VPN) connection. They will be presented the exact same interface when operating the device from home, but may at times experience interface lag due to the VPN connection.
 
 # Use Cases
 
-## Problem X
+## Medical Physicist Optimization Parameter QA Check
 
-Brief description.
+During the QA of a treatment plan a Medical Physicist must check the algorithm used for the calculation to confirm it was selected correctly based on the department protocol. In addition they must check that the grid size on which the calculation was done also conforms to the protocol.
 
 ## Problem Y
 
