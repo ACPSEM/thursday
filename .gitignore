@@ -8,9 +8,11 @@
 !*.md
 !*.toml
 !*.yml
+!*.png
 
 !.vscode/
 !docs/
+!docs/**
 !minutes/
 
 !regulatory/
