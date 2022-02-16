@@ -59,3 +59,6 @@ Tasks:
 2. Run a poetry installation for the first time by running `poetry install`
 
    *You can find a well-written explanation of project setup using Poetry and, especially, the function of `poetry install` [here](https://python-poetry.org/docs/basic-usage/#installing-without-poetrylock). In this particular case, since this script hasn't been run before and we haven't yet specified any dependencies, running `poetry install` simply creates `poetry.lock`. This initial version of `poetry.lock` (view it [here](https://github.com/ACPSEM/thursday/blob/e427a79b4674d7e69894db84770c68cd3473b8c5/poetry.lock)) contains nothing particularly interesting except for the `content-hash`. Whenever you make changes to the project's Poetry environment (e.g. adding a dependency by running `poetry add <new-dependency>`), `content-hash` updates to a new hash. Changes to `poetry.lock` can be tracked using this hash and controlled where necessary.*
+
+
+![](img/proxy-settings.png)
