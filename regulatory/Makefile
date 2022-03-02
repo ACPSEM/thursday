@@ -18,7 +18,7 @@ docs: $(RELEASE_DOCS)
 
 release/%.md: documents/%.md $(CONFIG) $(DATA_FILES)
 	@mkdir -p $(@D)
-	rdm render $< $(CONFIG) $(DATA_FILES) > $@
+	poetry run rdm render $< $(CONFIG) $(DATA_FILES) > $@
 
 release/%.pdf: release/%.md pandoc_pdf.yml template.tex
 	@mkdir -p $(@D)
@@ -35,7 +35,7 @@ release/%.tex: release/%.md pandoc_pdf.yml template.tex
 
 # Manually call recipe to pull down your development history
 data/history.yml:
-	rdm pull $< > $@
+	poetry run rdm pull $< > $@
 
 .PHONY:
 clean:

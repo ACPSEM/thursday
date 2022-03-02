@@ -1,22 +1,18 @@
-- id: r-1
-  title: First Example Requirement
-  system_requirements: [SR-6]
-  description: A brief description of the requirement; should use the world "shall".  If the software is a "software only device", then no "system_requirements" are necessary---you can remove these keys completely.  They are only necessary for medical devices with a hardware component.
+- id: r-1-1
+  title: TP-Q4a-4 Calculation algorithm
+  system_requirements: []
+  description: The software shall automatically check that the algorithm used for calculation is correct based on department protocol
   specifications: |
-      The specification should describe *how* the requirement is met.  Thus, the requirement is the *what* and the specification is the *how*.
+    The department protocol will be provided to the software in a configuration file. The software will extract the algorithm used for calculation
+    from the TPS Scripting Environment. It will compare the algorithm defined in the protocol to the algorithm actually used.
 
-      Specifications are written using github-flavored markdown.
-- id: r-2
-  title: Second Example Requirement
-  system_requirements: [SR-6, SR-11]
-  description: Requirements describe what the software needs to do, and not how.
+    In the report generated, the result of the comparison will be provided. Clearly highlighting a issue of the algorithms are found to be different.
+- id: r-1-2
+  title: TP-Q4a-5 Calculation grid size
+  system_requirements: []
+  description: The software shall automatically check that the grid size used for calculation is correct based on department protocol
   specifications: |
-      Another specification goes here.
-- id: r-3-1
-  title: Third Example Requirement Nested Id First Item
-  system_requirements: [SR-4]
-  description: Requirements should be verifiable (e.g., testable).
-- id: r-3-2
-  title: Fourth Example Requirement Nested Id Second Item
-  system_requirements: [SR-4, SR-7]
-  description: Requirements can be written using markdown.
+    The department protocol will be provided to the software in a configuration file. The software will extract the grid size used for calculation
+    from the TPS Scripting Environment. It will compare the grid size defined in the protocol to the grid size actually used.
+
+    In the report generated, the result of the comparison will be provided. Clearly highlighting a issue of the grid sizes are found to be different.
