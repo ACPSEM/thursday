@@ -1,3 +1,12 @@
+- id: r-1
+  title: Optimization or calc parameters checks
+  system_requirements: []
+  description: The software shall automatically perform checks on Optimization or calc parameters based on TG-275 recommendations
+  specifications: |
+    The department protocol will be provided to the software in a configuration
+     file. The software will extract the parameters of used for calculation and optimization
+    from the TPS Scripting Environment.
+
 - id: r-1-1
   title: TP-Q4a-4 Calculation algorithm
   system_requirements: []
@@ -16,3 +25,21 @@
     from the TPS Scripting Environment. It will compare the grid size defined in the protocol to the grid size actually used.
 
     In the report generated, the result of the comparison will be provided. Clearly highlighting a issue of the grid sizes are found to be different.
+- id: r-2
+  title: Report Generation
+  system_requirements: []
+  description: A report will be generated displaying the results of the automated checks
+  specifications: |
+    The report will list each check performed. Results of automatic checks will be highlighted
+    displaying passing checks in green, warnings in orange and failures in red.
+
+    Data points which weren't automatically checked and require manual review will be 
+    highlighted in blue.
+
+    The report will be generated and saved in PDF format.
+- id: r-3
+  title: Results database
+  system_requirements: []
+  description: The results presented in the report will be saved off in a machine readable format
+  specifications: |
+    The results file can be easily loaded into external software for analysis.
