@@ -14,7 +14,8 @@ structured to be readily extended to include additional functionality that may
 include TPS scripts or standalone tools. All documentation is included in the
 repository (inder `docs/`) and is intended to conform to ISO 62304.
 
-Instructions for replicating this repository can be found [here](#getting-started).
+Instructions for replicating this repository can be found
+[here](#getting-started).
 
 ## Software Development Task Group
 
@@ -24,9 +25,9 @@ official endorsement by ACPSEM.
 
 ## Target audience
 
-A Medical Physicist who has an interest in software development enough skills
-to get into trouble (and would like to not get into trouble).
+A Medical Physicist who has an interest in software development enough skills to
+get into trouble (and would like to not get into trouble).
 
-# Getting Started
+## Getting Started
 
-# Troubleshooting known 
+## Troubleshooting known
